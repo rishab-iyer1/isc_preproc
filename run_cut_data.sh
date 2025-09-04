@@ -1,32 +1,36 @@
 #!/bin/bash
 
 # Define the list of subjects
+# subjects=(
+#     # "P3"
+#     "VR1"
+#     "VR10"
+#     "VR11"
+#     "VR12"
+#     "VR13"
+#     "VR14"
+#     "VR16"
+#     "VR17"
+#     "VR18"
+#     "VR19"
+#     "VR2"
+#     "VR20"
+#     "VR21"
+#     "VR22"
+#     "VR23"
+#     "VR3"
+#     "VR4"
+#     "VR5"
+#     "VR7"
+#     "VR8"
+#     "VR9"
+#     "P1"
+#     "P2"
+# )  # toy story
+
 subjects=(
-    # "P3"
-    "VR1"
-    "VR10"
-    "VR11"
-    "VR12"
-    "VR13"
-    "VR14"
-    "VR16"
-    "VR17"
-    "VR18"
-    "VR19"
-    "VR2"
-    "VR20"
-    "VR21"
-    "VR22"
-    "VR23"
-    "VR3"
-    "VR4"
-    "VR5"
-    "VR7"
-    "VR8"
-    "VR9"
-    "P1"
-    "P2"
-)
+    "VR1" "VR2" "VR3" "VR4" "VR7" "VR8" "VR9" "VR10" "VR11" "VR12" "VR13" "VR14" "VR15" "VR16" "VR17" "VR18" "VR19" "VR21" "VR22" "VR23" "VRfv"
+)  # one small step
 
 # Default space
 SPACE="standard"
@@ -37,7 +41,7 @@ if [ ! -z "$1" ]; then
 fi
 
 # Path to the Python script
-PYTHON_SCRIPT="cut_fmri_data_toystory.py"
+PYTHON_SCRIPT="cut_fmri_data.py"
 
 # Loop through each subject and run the Python script
 for subj in "${subjects[@]}"; do
